@@ -1,0 +1,535 @@
+/*_____________________________________________*/
+/* BASIC SETUP */
+/*_____________________________________________*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff;
+  color: #707070;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  /* overflow-x: hidden; */
+}
+
+/*_____________________________________________*/
+/* REUSABLE COMPONENTS */
+/*_____________________________________________*/
+
+.row2 {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/*-----Headings-----*/
+
+/* Letter-spacing and word-spacing? */
+
+h1,
+h2,
+h3,
+h4 {
+  color: #394041;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 200%;
+}
+
+h2 {
+  font-size: 187%;
+}
+
+h3 {
+  font-size: 160%;
+}
+
+h4 {
+  font-size: 120%;
+}
+
+/*-----Paragraphs-----*/
+
+p {
+  line-height: 1.5;
+}
+
+/*_____________________________________________*/
+/* HEADER */
+/*_____________________________________________*/
+
+header {
+  background-color: #323f48;
+  /* height: 100vh; */
+}
+
+/*  Navbar Header */
+/* .Header {
+  background-color: white;
+  padding: 0 8rem;
+} */
+
+/* Navigation Bar */
+/* 
+.navbar {
+  padding: 0 100px;
+}
+
+.navbar-brand {
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.3rem;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: lighter;
+} */
+
+/* Navigation Bar 2.0 */
+
+.logo {
+  float: left;
+  height: 100px;
+  margin: 5px 0 0 0;
+  width: auto;
+}
+
+.navigation {
+  height: 110px;
+  width: 100%;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 45px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  border-bottom: 2px solid transparent;
+  color: #f8faf7;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-bottom 0.5s;
+  padding: 8px 0;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #cbaf87;
+  color: #f8faf7;
+}
+
+/* Mobile-NavBar */
+
+.mobile-nav-icon {
+  float: right;
+  margin-top: 40px;
+  margin-right: 50px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #f8faf7;
+}
+
+/*_____________________________________________*/
+/*      FOOTER */
+/*_____________________________________________*/
+
+footer {
+  background-color: #323f48;
+  color: #cbaf87;
+  padding: 1% 10%;
+  text-align: center;
+}
+
+.social-icon {
+  color: #cbaf87;
+  padding: 10px 10px;
+}
+
+/*========================================================================*/
+/*            HOME PAGE */
+/*========================================================================*/
+
+/*_____________________________________________*/
+/*      CAROUSEL */
+/*_____________________________________________*/
+
+#carouselFeaturedHouses {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carouselHome1 {
+  width: 100%;
+}
+
+.carouselHome2 {
+  width: 100%;
+}
+
+.carouselHome3 {
+  width: 100%;
+}
+
+.carousel-content {
+  background-color: transparent;
+  width: 190px;
+  height: 70px;
+  position: absolute;
+  bottom: 9%;
+  left: auto;
+  z-index: 22;
+  margin: auto;
+  opacity: 1;
+}
+
+.carousel-cap {
+  color: #f8faf7;
+  font-size: 100%;
+  height: auto;
+  opacity: 1;
+  width: 100%;
+  text-align: center;
+  z-index: 23;
+}
+
+.carousel-content2 {
+  background-color: #000;
+  width: 190px;
+  height: 70px;
+  position: absolute;
+  bottom: 9%;
+  left: auto;
+  z-index: 21;
+  margin: auto;
+  opacity: 0.5;
+}
+
+/* Carousel Tags */
+
+/* Carousel Next/Prev Buttons */
+
+.carousel i {
+  color: white;
+  font-size: 60px;
+  text-shadow: 0 0 10px black, 0 0 10px black;
+}
+
+/*_____________________________________________*/
+/*      MIDDLE CONTAINER */
+/*_____________________________________________*/
+
+/* .intro {
+  font-size: 1.5em;
+  font-family: "Lato", arial, sans-serif;
+  font-weight: 600; 
+}  */
+
+.middle-container {
+  background-color: #f9f9f9;
+  padding: 4% 19%;
+}
+
+.middle-container p {
+  margin-top: 2%;
+  text-align: justify;
+}
+
+/*========================================================================*/
+/*            ABOUT US */
+/*========================================================================*/
+
+.aboutSaeta {
+  margin: 4% 22% 4% 22%;
+  text-align: justify;
+}
+
+.aboutSaeta h1 {
+  text-align: center;
+  padding: 0 0 20px 0;
+}
+
+/* #team-description {
+  color: #4B5D67;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  padding-top: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.team-description-title {
+  font-size: 28px;
+  font-family: "Lato", Helvetica, arial, sans-serif;
+  font-weight: 600;
+}
+
+.team-description {
+  font-size: 18px;
+  padding: 30px 200px 30px;
+  text-align: center;
+} */
+
+/*_____________________________________________*/
+/*      TEAM CARDS */
+/*_____________________________________________*/
+
+#team-cards hr {
+  width: 70%;
+}
+
+.cardsContainer {
+  margin: 2rem;
+}
+
+#team-cards h2 {
+  text-align: center;
+}
+
+.card {
+  margin-left: 10%;
+  text-align: center;
+  width: 20rem;
+}
+
+.agentDescription {
+  margin: 2rem;
+  text-align: justify;
+}
+
+/* #team-cards {
+  padding: 0 100px 100px;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+  text-align: center;
+}
+
+.derek-card {
+  height: 397px;
+  width: 340px;
+}
+
+.esther-card {
+  height: 397px;
+  width: 365px;
+}
+
+.alexa-card {
+  height: 397px;
+  width: 320px;
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #CBAF87;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.overlay-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+} */
+
+/*========================================================================*/
+/*            PROPERTIES PAGE */
+/*========================================================================*/
+
+#properties {
+  min-height: calc(100vh - 290px);
+}
+
+/* Properties Style */
+.properties-container {
+  margin: 50px;
+  text-align: center;
+  color: #707070;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 17px;
+}
+
+/* Properties Cards */
+
+.curridabat-card {
+  height: 185px;
+  width: auto;
+}
+
+.granadilla-card {
+  height: 185px;
+  width: auto;
+}
+
+.tres-rios-card {
+  height: 185px;
+  width: auto;
+}
+
+.escazu-card {
+  height: 185px;
+  width: auto;
+}
+
+/*========================================================================*/
+/*            HOUSE PAGE */
+/*========================================================================*/
+
+/* CSS Buy Page */
+
+/* Pagina Casa */
+/* slider */
+
+.house-name {
+  text-align: center;
+}
+
+.banner {
+  margin: 2rem;
+  width: 50rem;
+}
+
+.banner p {
+  text-align: center;
+}
+
+/* Ojo estos elementos tan generales! */
+/* ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin-bottom:0;
+}
+li {
+  display: block;
+  float: left;
+  margin-right: 6px;
+  cursor:pointer;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+} */
+
+/* Agent */
+
+.propertyContact {
+  margin: auto;
+  padding-bottom: 2rem;
+  text-align: center;
+  width: auto;
+}
+
+/* Specs Casas*/
+
+.propertySpecs {
+  color: #4b5d67;
+  font-family: "Roboto", arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.propertySpecs th {
+  padding: 3px;
+  border: 2px solid #fff;
+}
+
+.propertySpecs td {
+  padding: 3px;
+  border: 2px solid #fff;
+}
+
+.propertySpecsTable {
+  background-color: #e0e0e0;
+  width: 75%;
+}
+
+/* Property Decription */
+
+.propertyDescription,
+.propertyFeatures {
+  padding: 0 3rem;
+}
+
+.propertyDescription {
+  text-align: justify;
+}
+
+/*========================================================================*/
+/*            CONTACT US PAGE */
+/*========================================================================*/
+
+#contact-us {
+  min-height: calc(100vh - 230px);
+}
+
+.form-contactus {
+  padding: 5%;
+  text-align: center;
+}
+
+.info-contactus {
+  color: #4b5d67;
+  font-family: "Roboto", arial, sans-serif;
+  padding: 5%;
+  text-align: center;
+}
